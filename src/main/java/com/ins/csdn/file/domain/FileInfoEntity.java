@@ -3,6 +3,9 @@ package com.ins.csdn.file.domain;
 import javax.persistence.*;
 import java.util.Objects;
 
+/**
+ * @author 高秀和
+ */
 @Entity
 @Table(name = "file_info", schema = "csdn_fs", catalog = "")
 public class FileInfoEntity {
