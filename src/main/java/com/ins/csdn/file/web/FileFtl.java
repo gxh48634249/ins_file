@@ -16,8 +16,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.PostConstruct;
 import javax.persistence.EntityManager;
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -121,6 +119,12 @@ public class FileFtl {
 
     @RequestMapping("list")
     public ModelAndView list(ModelAndView modelAndView) {
+        modelAndView.addObject("page",0);
+        return modelAndView;
+    }
+
+    @RequestMapping("test")
+    public ModelAndView test(ModelAndView modelAndView) {
         modelAndView.addObject("page",0);
         return modelAndView;
     }
